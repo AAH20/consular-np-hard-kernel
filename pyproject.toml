@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consular-np-hard-kernel"
+version = "1.0.0"
+description = "Deterministic zero-dependency Python solvers for the 10 Apex NP-Hard Problems in Consular Logistics, Visa Allocation, and Sovereign Immigration Systems."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Autonomous Consular Systems & Sovereign Identity Research"}
+]
+keywords = [
+    "consular",
+    "visa",
+    "immigration",
+    "np-hard",
+    "schengen",
+    "embassy",
+    "slot-allocation",
+    "solvency-audit",
+    "identity-resolution",
+    "job-shop-scheduling",
+    "dossier-packing",
+    "waf-evasion",
+    "rolling-stay",
+    "fraud-detection",
+    "veeza-ai"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Office/Business :: Financial",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.scripts]
+consular-kernel = "consular_np_hard_kernel.cli:main"
